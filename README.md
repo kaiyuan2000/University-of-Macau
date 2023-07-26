@@ -4,9 +4,9 @@ I'm majoring in CS in University of Macau, here are some of the CS related cours
 
  | Code | Subject Name | 
  |------|--------------|
+ CISC1001 | Programming Science |
  CISC1002 | Discrete Structure|
  CISC1004 | Introduction to CS|
- CISC1001 | Programming Science |
  CISC1006 | Probability and Statistic |
  GEST1004 | Quantitative REasong for Science & Tech |
  MATH1001 | Linear Algebra 1|
