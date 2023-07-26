@@ -1,6 +1,8 @@
 # University-of-Macau
 
 I'm majoring in CS in University of Macau, here are some of the CS related course I've taken in 4 years study.
+Will only upload the relevant code here, but not written assignment / exam / PPT.
+
 
  | Code | Subject Name | 
  |------|--------------|
