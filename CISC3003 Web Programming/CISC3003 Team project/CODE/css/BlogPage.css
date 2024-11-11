@@ -1,0 +1,513 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display&family=Poppins:wght@500&display=swap');
+
+/* 
+Page Coolor {
+	--primary-color: #6b9080
+	--secondary-green: #b0c4b1
+	--secondary-pink: #f7e1d7
+	--body-bg: #dedbd2
+	--sp-pink: #edafb8
+	--sp-blue: #eaf4f4
+
+	--text-dark: #01161e
+	--text-light: #124559
+
+	--footer: #4a5759
+}
+*/
+
+/* Global Styles */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+}
+body{
+	background-color: #D7C9BE;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+
+
+/* sidebar */
+#navbar{
+	position: fixed;
+	width: 100%;
+	background-color: #8B775F;
+	z-index: 999;
+}
+#navbar .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+	padding:10px 20px;
+}
+#navbar .logo{
+	margin-top: 4px;
+	max-width: 150px;
+}
+#navbar .logo img{
+	border-radius: 8px;
+}
+#navbar nav{
+	flex: 1;
+	text-align: right;
+}
+#navbar nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+#navbar nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#navbar a{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+#navbar a:hover{
+	font-size: 16px;
+	color: #D7C9BE;
+}
+#navbar i{
+	font-size: 24px;
+	color: white;
+	margin: 10px;
+}
+#navbar .icon{
+	border-radius: 8px;
+	cursor: pointer;
+}
+#navbar .icon:hover{
+	background-color: #D7C9BE;
+	border-radius: 8px;
+}
+#navbar .icon a{
+	font-size: 15px;
+}
+#navbar .icon:hover a{
+	color: white;
+}
+#navbar .bd{
+	border: 2px solid #FFFFFF;
+}
+#navbar .bd:hover{
+	border: none;
+}
+#navbar .menu-icon{
+	border-radius: 8px;
+	position: absolute;
+	right: -200px;
+}
+#navbar .menu-icon:hover{
+	background-color: #D7C9BE;
+	border-radius: 8px;
+}
+/* End sidebar */
+
+/* sub hero section */
+#sub_hero{
+	width: 100%;
+}
+#sub_hero .container{
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	padding-top: 20px;
+}
+#sub_hero .content{
+	width: 60%;
+	background-image: linear-gradient(#657359, #9AA582);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+#sub_hero .cover{
+	width: 40%;
+	background-image: url("../images/banner_01.jpg");
+	background-position: top center;
+}
+#sub_hero h1{
+	padding: 20px;
+	font-size: 3rem;
+	font-family: Playfair Display;
+}
+#sub_hero span{
+	font-size: 3.5rem;
+	color: #4a5759;
+}
+/* End sub hero section */
+
+/* activity section */
+#activity{
+	margin: 40px 0 70px 0;
+	width: 100%;
+}
+#activity .section-title{
+	text-align: center;
+	margin: 0 auto 50px;
+	position: relative;
+	line-height: 60px;
+}
+#activity .section-title::after{
+	content: '';
+	background-color:#8B775F;
+	width: 100px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%)
+}
+#activity h2{
+	font-family: Poppins;
+	font-size: 36px;
+}
+#activity img{
+	object-fit: cover;
+}
+#activity .container{
+	margin: 0 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#activity .content{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#activity .row-1{
+	width: 100%;
+	display: flex;
+}
+#activity .row-2{
+	width: 100%;
+	display: flex;
+}
+#activity .col-1{
+	min-width: 33.33%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+#activity .col-2{
+	min-width: 33.33%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+#activity .text{
+	background-color: white;
+	border-radius: 8px;
+	padding: 10px;
+	margin: -20px 20px 0 20px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#activity .detail{
+	display: flex;
+	justify-content: space-between;
+	color: gray;
+}
+#activity .col-2 span{
+	font-size: 5px;
+}
+#activity .row-1 h3{
+	font-size: 16px;
+}
+#activity .text a{
+	color: black;
+}
+#activity .text a:hover{
+	color: #4a5759;
+}
+#activity p{
+	color: darkgray;
+}
+#activity .more{
+	display: inline-block;
+	padding: 10px 30px;
+	color: #4a5759;
+	background-color: white;
+	border: 3px solid #4a5759;
+	font-size: 1.8rem;
+	letter-spacing: 0.2rem;
+	margin-top: 36px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+#activity .more:hover{
+	color: white;
+	background-color: #4a5759;
+}
+.page-btn{
+	margin-top: 20px;
+}
+.page-btn span{
+	display: inline-block;
+	border: 1px solid #4a5759;
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.page-btn span:hover{
+	background: #4a5759;
+	color: white;
+}
+/* End activity section */
+
+/* footer section */
+#footer{
+	background-color: #72604B;
+	color: white;
+	padding: 8rem 0 4rem 0;
+}
+#footer .container{
+	padding: 0 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+#footer .name{
+	width: 100%;
+	text-align:center;
+}
+#footer footer{
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#footer footer .col-1{
+	flex: 2;
+	margin:20px 5px;
+}
+#footer footer .col-1 .app-logo img{
+	max-width: 140px;
+}
+#footer footer .col-2{
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin:20px 5px;
+}
+#footer footer .col-2 img{
+	max-width: 180px;
+	border-radius: 8px;
+}
+#footer footer .col-3{
+	flex: 1;
+	margin:20px 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#footer footer .col-4{
+	flex: 1;
+	margin:20px 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#footer ul{
+	list-style: none;
+}
+#footer ul li{
+	display: table;
+	margin: 0 auto;
+}
+#footer h3{
+	color: #D7C9BE;
+	font-family: Playfair Display;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+#footer p{
+	color: white;
+	margin: 10px 0px;
+}
+
+.square {
+	width: 500px;
+	height: 70px;
+	background: rgba(0, 0, 0, 0);
+	font-family: Dancing Script;
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 24px;
+}
+
+/* keyframes */
+@keyframes arrow{
+	0%{
+		top: -50px;
+	}
+	50%{
+		top: 0px;
+	}
+	100%{
+		top: 50px;
+	}
+}
+@keyframes text_reveal_box{
+	50%{
+		width: 100%;
+		left: 0;
+	}
+	100%{
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal{
+	100%{
+		color: black;
+	}
+}
+@keyframes reveal{
+	0%{
+		bottom: -70px;
+	}
+	100%{
+		bottom: 0;
+	}
+}
+/* end keyframes */
+
+@media only screen and (max-width: 1000px){
+	html{
+		font-size: 9px;
+	}
+	#navbar .container{
+		width: 90%;
+	}
+	#navbar .menu-icon{
+		right: 10px;
+		cursor: pointer;
+	}
+	#navbar nav ul{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		background: #D7C9BE;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+	#navbar nav ul li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#navbar a{
+		color: #01161e;
+	}
+	#navbar .icon a{
+		color: white;
+		font-size: 15px;
+	}
+	#activity  h2{
+		font-size: 24px;
+	}
+	#footer .container{
+		padding: 0 5%;
+	}
+	.square {
+		width: 250px;
+		height: 150px;
+		font-size: 42px;
+	}
+}
+
+@media only screen and (max-width: 750px){
+	#sub_hero h1{
+		font-size: 2.8rem;
+	}
+	#activity .row-1{
+		flex-direction: column;
+	}
+	#activity .row-2{
+		flex-direction: column;
+	}
+	#activity h2{
+		font-size: 30px;
+	}
+	#footer footer{
+		flex-direction: column;
+		align-items: center;
+	}
+	#footer footer .col-1{
+		flex: 1;
+	}
+	#footer footer .col-2{
+		flex: 1;
+	}
+
+	#footer footer .col-1{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	#footer footer .col-2{
+		padding: 0px 30px;
+	}
+	.square {
+		width: 450px;
+		height: 100px;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .h1-animation{
+    animation: reveal 1s ease-in-out forwards;
+	animation-delay: 0.4s;
+  }
+}
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .square-animation {
+    animation: wipe-enter 1s 1;
+  }
+}

@@ -1,0 +1,5 @@
+Filename;Width;Height;Roi.X1;Roi.Y1;Roi.X2;Roi.Y2;ClassId
+test1.ppm;447;442;73;27;300;255;14
+test2.ppm;105;97;1;1;105;97;13
+test3.ppm;100;100;1;1;100;100;14
+test4.ppm;91;77;18;19;65;55;13

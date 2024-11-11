@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NLP Group Project: MaxEnt</title>
+        <style>
+            /* Overall body adjustments for a sleek, modern look */
+            body {
+                background-color: #f0f0f0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #333;
+                line-height: 1.6;
+            }
+            /* Centering content and adjusting width for a clean layout */
+            #input_div, #result_div {
+                max-width: 600px; /* Adjusted width for focus */
+                margin: auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                border-radius: 8px; /* Rounded corners for modern look */
+                margin-top: 20px;
+            }
+            /* Style adjustments for textarea for better readability */
+            textarea {
+                width: 100%; /* Full width */
+                height: 200px;
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                font-size: 16px;
+                color: #333;
+                background-color: #fff;
+                box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+            }
+            /* Unified button styles with modern colors */
+            .button {
+                background-color: #007bff; /* Brighter blue */
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+                border-radius: 8px;
+                cursor: pointer; /* Cursor change for better UX */
+                transition: background 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+            }
+            /* Enhanced result section for clear visibility */
+            #result {
+                font-size: 16px;
+                padding-left: 10px;
+                border-left: 4px solid #007bff;
+            }
+            /* Styles for person class with subtle hover effects */
+            .person {
+                font-weight: bold; /* Correct property for bold text */
+                color: #5555fd;
+            }
+            .person:hover {
+                background-color: #007bff;
+                color: white;
+                border-radius: 4px;
+                padding: 2px 4px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            }
+            /* Enhancing button hover effect for interactivity */
+            .button:hover {
+                background-color: #0056b3; /* Darker shade on hover */
+                transform: translateY(-2px); /* Slight lift */
+                box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="input_div">
+            <form id="inputForm" method="POST">
+                <h2>Input the sentence for tagging here:</h2>
+                <textarea name="input" form="inputForm"></textarea><br>
+                <input type="submit" value="Submit" class="button">
+                <input type="reset" value="Clear" class="button">
+            </form>
+        </div>
+        <div id="result_div">
+            <h2>Tagging result:</h2>
+            <p id="result">
+                {% for word, tag in results %}
+                    {% if tag == 'PERSON' %}
+                        <span class="person">{{ word }}&lt;=PERSON&gt;</span>
+                    {% else %}
+                        {{ word }}
+                    {% endif %}
+                {% endfor %}
+            </p>
+        </div>
+    </body>
+</html>

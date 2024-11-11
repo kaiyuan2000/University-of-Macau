@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/template.css">
+	<script src="https://kit.fontawesome.com/4776385d24.js"></script>
+	<title>PlantLife Community - template</title>
+</head>
+
+<body>
+	<div id="navbar">
+		<div class="container">
+			<div class="logo">
+				<img src="../images/logo.jpg" alt="logo">
+			</div>
+			<nav class="menu">
+				<ul id="menu_items">
+					<li><a href="../WebContent/Home Page.php">Home</a></li>
+					<li><a href="../WebContent/Community Page.php">Community</a></li>
+					<li><a href="../WebContent/Activity Page.php">Activity</a></li>
+					<li><a href="../WebContent/User Page.php">User</a></li>
+					<li><a href="../WebContent/library.php">Library</a></li>
+				</ul>
+			</nav>
+			<div class="icon">
+				<a href="../WebContent/Login Page.html"><i class="fa fa-right-to-bracket"></i>LogIn &nbsp;</a>
+			</div>
+			<div class="icon">
+				<a href="../WebContent/Signup Page.html"><i class="fa fa-user-plus"></i>SignUp	 &nbsp;</a>
+			</div>
+			<div class="menu-icon" onClick="mentoggle()">
+				<i class="fa fa-bars"></i>
+			</div>
+		</div>
+	</div>
+	<script>
+		var MenuItems = document.getElementById("menu_items");
+		MenuItems.style.maxHeight = "0px";
+		function mentoggle(){
+			if(MenuItems.style.maxHeight == "0px"){
+				MenuItems.style.maxHeight = "200px"
+			}else{
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>
+	<!-- End navbar -->
+
+
+	<!-- footer section -->
+	<section id="footer">
+		<div class="container">
+			<footer>
+				<div class="col-1">
+					<h3>Download Our App</h3>
+					<p>Downlad App for Android and ios mobile phone.</p>
+					<div class="app-logo">
+						<img src="../images/play-store.png" alt="play-store">
+						<img src="../images/app-store.png" alt="app-store">
+					</div>
+				</div>
+				<div class="col-2">
+					<img src="../images/logo.jpg" alt="logo">
+					<p>Our Puropse Is To Sustainably Make the Pleasure and Benefits of Plants Accessible to Many</p>
+				</div>
+				<div class="col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</footer>
+			<div class="name">
+				<hr>
+				<p>CISC3003: Group Project Team 06</p>
+			</div>
+		</div>	
+		</div>
+	</section>
+	<!-- End footer section -->
+</body>
+</html>

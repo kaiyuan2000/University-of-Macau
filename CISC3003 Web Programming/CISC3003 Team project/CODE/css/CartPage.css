@@ -1,0 +1,628 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display&family=Poppins:wght@500&display=swap');
+
+/* 
+Page Coolor {
+--primary-color: #6b9080 - #8B775F
+--secondary-green: #b0c4b1 - #D7C9BE
+--secondary-pink: #f7e1d7 - #657359
+--body-bg: #dedbd2 - #D7C9BE
+--sp-pink: #edafb8 - #9AA582
+--sp-blue: #eaf4f4 - #D7C9BE
+--footer: #4a5759 - #72604B
+}
+*/
+
+/* Global Styles */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+}
+body{
+	background-color: #D7C9BE;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+
+
+.little_title{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 90px;
+	margin: 0 20px 0 20px;
+}
+
+.little_title .heading{
+	width: 50%;
+	padding-bottom: 50px;
+}
+
+.little_title .heading h3{
+	font-size: 3rem;
+	font-weight: bolder;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #222;
+}
+
+.little_title .heading h3 span{
+	font-weight: 100;
+}
+
+.little_title .box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.little_title .box .dream{
+	display: flex;
+	flex-direction: column;
+	width: 32.5%;
+}
+
+.little_title .box .dream img{
+	width: 100%;
+	padding: 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+
+.little_title .box .dream img:hover{
+	transform: scale(1.02);
+	
+}
+
+/* sidebar */
+#navbar{
+	position: fixed;
+	width: 100%;
+	background-color: #8B775F;
+	z-index: 999;
+}
+#navbar .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+	padding:10px 20px;
+}
+#navbar .logo{
+	margin-top: 4px;
+	max-width: 150px;
+}
+#navbar .logo img{
+	border-radius: 8px;
+}
+#navbar nav{
+	flex: 1;
+	text-align: right;
+}
+#navbar nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+#navbar nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#navbar a{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+#navbar a:hover{
+	font-size: 16px;
+	color: #F1E4DB;
+}
+#navbar i{
+	font-size: 24px;
+	color: white;
+	margin: 10px;
+}
+#navbar .icon{
+	border-radius: 8px;
+	cursor: pointer;
+}
+#navbar .icon:hover{
+	background-color: #F1E4DB;
+	border-radius: 8px;
+}
+#navbar .icon a{
+	font-size: 15px;
+}
+#navbar .icon:hover a{
+	color: white;
+}
+#navbar .bd{
+	border: 2px solid #FFFFFF;
+}
+#navbar .bd:hover{
+	border: none;
+}
+#navbar .menu-icon{
+	border-radius: 8px;
+	position: absolute;
+	right: -200px;
+}
+#navbar .menu-icon:hover{
+	background-color: #F1E4DB;
+	border-radius: 8px;
+}
+/* End sidebar */
+
+
+/* cart items */
+.cart-pages{
+	margin: 80px auto;
+}
+
+.cart-info p{
+    margin-top: 20px;
+}
+table{
+	width:100%;
+	border-collapse: collagse;
+} 
+.cart-info{
+	display: flex;
+	flex-wrap: wrap;
+}
+th{
+	text-align: center;
+	padding: 5px;
+	color: #fff;
+	background: #664321;
+	font-weight: normal;
+    font-size: 25px;
+}
+.cart-info u{
+	color: #b5b5b5;
+}
+td{
+	padding: 10px 5px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+td input{
+	width: 45px;
+	height: 30 px;
+	padding: 5px;
+}
+td a{
+	color:#9D846C;
+	font-size: 12px;
+}
+td img{
+	width:80px;
+	height:80px;
+	margin-right: 10px;
+}
+.total-price{
+	display: flex;
+	justify-content:flex-end ;
+}
+.total-price table{
+	border-top:3px solid #563434;
+	width: 100%;
+	max-width: 400px;
+}
+td:last-child{
+	text-align: right;
+}
+th:last-child{
+	text-align: right;
+}
+
+/* account-page */
+.account-page{
+	padding:50px 0;
+	background: radial-gradient(#fff,#CBBDB0);
+}
+.form-container{
+	background: #fff;
+	width:300px;
+	height:400px;
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+	margin: auto;
+	box-shadow: 0 0 20px 0 px rgba(0,0,0,0,1);
+	overflow: hidden;
+}
+.form-container span{
+	font-weight: bold;
+	padding: 0 10px;
+	color: #555;
+	cursor: pointer;
+	width: 100px;
+	display: inline-block;
+}
+.form-btn{
+	display: inline-block;
+}
+.form-container form{
+	max-width: 300px;
+	padding: 0 20px;
+	position: absolute;
+	top: 130px;
+	transition: transform 1s;
+}
+form input{
+	width: 100%;
+	height: 30px;
+	margin: 10px 0;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+}
+form .btn{
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	margin: 10px 0;
+}
+form .btn:focus{
+	outline: none;
+}
+#LoginForm{
+	left: -300px;
+}
+#RegForm{
+	left: 0;
+}
+form a{
+	font-size: 12px;
+}
+#Indicator{
+	width: 100px;
+	border: none;
+	background: #664321;
+	height: 3px;
+	margin-top: 8px;
+	transform: translate(100px);
+}
+.account-page img{
+	width: 200%;
+}
+
+/* community section */
+
+.section-title-best{
+	text-align: center;
+		margin: 0 auto;
+		position: relative;
+		line-height: 60px;
+
+}
+
+
+
+.section-title-best::after{
+	content: '';
+	width: 1200px;
+	height: 5px;
+		/* border-radius: 5px; */
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+		border-bottom: 3px dashed #8B775F;
+}
+
+
+
+.more{
+    border-radius:30px;
+	display: inline-block;
+	padding: 7px 20px;
+	color: #72604B;
+	background-color: white;
+	border: 3px solid #72604B;
+	font-size: 1.4rem;
+	letter-spacing: 0.2rem;
+	margin-top: 36px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+    margin-bottom:20px;
+    margin-left:10px;
+  
+
+}
+
+
+.more:hover{
+	color: white;
+	background-color: #72604B;
+}
+
+.last {
+    margin-left: 800px;
+}
+.line{
+    border-top:3px solid #563434;
+}
+.remove{
+    background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  text-align: right;
+}
+.cart-info {
+    text-align: left;
+}
+
+/* footer section */
+#footer{
+	background-color: #72604B;
+	color: white;
+	padding: 8rem 0 4rem 0;
+}
+#footer .container{
+	padding: 0 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+#footer .name{
+	width: 100%;
+	text-align:center;
+}
+#footer footer{
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#footer footer .col-1{
+	flex: 2;
+	margin:20px 5px;
+}
+#footer footer .col-1 .app-logo img{
+	max-width: 140px;
+}
+#footer footer .col-2{
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin:20px 5px;
+}
+#footer footer .col-2 img{
+	max-width: 180px;
+	border-radius: 8px;
+}
+#footer footer .col-3{
+	flex: 1;
+	margin:20px 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#footer footer .col-4{
+	flex: 1;
+	margin:20px 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#footer ul{
+	list-style: none;
+}
+#footer ul li{
+	display: table;
+	margin: 0 auto;
+}
+#footer h3{
+	color: #D7C9BE;
+	font-family: Playfair Display;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+#footer p{
+	color: white;
+	margin: 10px 0px;
+}
+
+.square {
+	width: 500px;
+	height: 70px;
+	background: rgba(0, 0, 0, 0);
+	font-family: Dancing Script;
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 24px;
+}
+.small-container { /* 假设这是包含.payment表格的容器 */
+    overflow-x: auto; /* 启用横向滚动 */
+}
+.payment {
+    width: 100%;
+    min-width: 800px; /* 设置表格的最小宽度 */
+    overflow-x: auto; /* 超出容器宽度时允许横向滚动 */
+}
+.payment th, .payment td {
+    min-width: 90px; /* 根据需要调整最小宽度 */
+}
+/* .payment {
+    table-layout: fixed;
+    width: 100%;
+} */
+
+/* .payment th, .payment td {
+    width: 25%; 
+} */
+
+/* keyframes */
+@keyframes arrow{
+	0%{
+		top: -50px;
+	}
+	50%{
+		top: 0px;
+	}
+	100%{
+		top: 50px;
+	}
+}
+@keyframes text_reveal_box{
+	50%{
+		width: 100%;
+		left: 0;
+	}
+	100%{
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal{
+	100%{
+		color: black;
+	}
+}
+@keyframes reveal{
+	0%{
+		bottom: -70px;
+	}
+	100%{
+		bottom: 0;
+	}
+}
+/* end keyframes */
+
+@media only screen and (max-width: 1000px){
+	html{
+		font-size: 9px;
+	}
+	#navbar .container{
+		width: 90%;
+	}
+	#navbar .menu-icon{
+		right: 10px;
+		cursor: pointer;
+	}
+	#navbar nav ul{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		background: #D7C9BE;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+	#navbar nav ul li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#navbar a{
+		color: #01161e;
+	}
+	#navbar .icon a{
+		color: white;
+		font-size: 15px;
+	}
+
+	#footer .container{
+		padding: 0 5%;
+	}
+	.square {
+		width: 250px;
+		height: 150px;
+		font-size: 42px;
+	}
+}
+
+@media only screen and (max-width: 750px){
+
+
+	#footer footer{
+		flex-direction: column;
+		align-items: center;
+	}
+	#footer footer .col-1{
+		flex: 1;
+	}
+	#footer footer .col-2{
+		flex: 1;
+	}
+
+	#footer footer .col-1{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	#footer footer .col-2{
+		padding: 0px 30px;
+	}
+	.square {
+		width: 450px;
+		height: 100px;
+	}
+    .single-product .row{
+		text-align: left;
+	}
+	.single-product .col-2{
+		padding: 20px 0;
+	}
+	.single-product h1{
+		font-size: 26px;
+		line-height: 32px;
+	}
+	.small-container { /* 假设.payment-container是包含.payment表格的容器 */
+        overflow-x: auto; /* 允许横向滚动 */
+        transform-origin: top left; /* 设置变换的原点为左上角 */
+        transform: scale(0.78); /* 根据需要调整缩放比例 */
+        width: 128%; /* 增加容器宽度以适应缩放后的表格 */
+    }
+	
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .h1-animation{
+    animation: reveal 1s ease-in-out forwards;
+	animation-delay: 0.4s;
+  }
+}
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .square-animation {
+    animation: wipe-enter 1s 1;
+  }
+}
