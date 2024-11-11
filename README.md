@@ -10,7 +10,7 @@ Will only upload the relevant code or project here, but not written assignment /
  CISC1002 | Discrete Structure| no coding |
  CISC1004 | Introduction to CS| no coding |
  CISC1006 | Probability and Statistic | no coding |
- GEST1004 | Quantitative REasong for Science & Tech | no coding|
+ GEST1004 | Quantitative Reasong for Science & Tech | no coding|
  MATH1001 | Linear Algebra 1| no coding |
  MATH1003 | Intermediate Calculus | no coding |
  CISC2001 | Computer Organisation| no coding |
